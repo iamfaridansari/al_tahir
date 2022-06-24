@@ -14,6 +14,10 @@
   .bottom-nav.active {
     top: 24px;
   }
+  .middleSection {
+    border-left: none;
+    border-right: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .logo {
@@ -23,21 +27,38 @@
   .home {
     background-position-x: 85%;
   }
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .newsletter form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
   p,
   a,
   i {
-    font-size: 14px;
+    font-size: 12px;
   }
   .myBtn {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .newsletter form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter form input {
+    margin-bottom: 10px;
+  }
+  .newsletter form button {
     padding: 10px;
   }
 }

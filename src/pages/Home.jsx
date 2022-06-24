@@ -4,7 +4,7 @@ import ten from "../assets/images/10.png";
 const Home = () => {
   return (
     <div className="home">
-      <div className="container py-5">
+      <div className="container">
         <div className="row align-items-start justify-content-start text-center mt-2">
           <div className="col-lg-4 col-md-6">
             <div className="logo mt-2 mb-5">
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="mb-5 px-2">
+      <div className="my-5 px-2">
         <button className="myBtn">Download application form</button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -37,19 +38,19 @@ const Navbar = () => {
         <div className="container">
           <ul className="list-unstyled d-flex align-items-lg-center justify-content-between gap-2 pagelinks">
             <li>
-              <a href="javascript:void(0)">home</a>
+              <Link to="/">home</Link>
             </li>
             <li>
-              <a href="javascript:void(0)">about</a>
+              <Link to="/about">about</Link>
             </li>
             <li>
-              <a href="javascript:void(0)">services</a>
+              <Link to="/service">services</Link>
             </li>
             <li>
               <a href="javascript:void(0)">feedback</a>
             </li>
             <li>
-              <a href="javascript:void(0)">contact us</a>
+              <Link to="/contact">contact us</Link>
             </li>
             <li>
               <a href="javascript:void(0)">current opening</a>
