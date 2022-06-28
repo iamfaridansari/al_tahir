@@ -38,25 +38,39 @@ const Navbar = () => {
         <div className="container">
           <ul className="list-unstyled d-flex align-items-lg-center justify-content-between gap-2 pagelinks">
             <li>
-              <Link to="/">home</Link>
+              <Link to="/" onClick={navbarToggle}>
+                home
+              </Link>
             </li>
             <li>
-              <Link to="/about">about</Link>
+              <Link to="/about" onClick={navbarToggle}>
+                about
+              </Link>
             </li>
             <li>
-              <Link to="/service">services</Link>
+              <Link to="/service" onClick={navbarToggle}>
+                services
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)">feedback</a>
+              <Link to="/" onClick={navbarToggle}>
+                feedback
+              </Link>
             </li>
             <li>
-              <Link to="/contact">contact us</Link>
+              <Link to="/contact" onClick={navbarToggle}>
+                contact us
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)">current opening</a>
+              <Link to="/opening" onClick={navbarToggle}>
+                current opening
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)">upload resume</a>
+              <Link to="/resume" onClick={navbarToggle}>
+                upload resume
+              </Link>
             </li>
           </ul>
         </div>

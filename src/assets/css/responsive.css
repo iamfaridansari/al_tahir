@@ -3,9 +3,11 @@
     width: 100%;
     height: auto;
     position: fixed;
-    top: -100%;
+    top: -50%;
     left: 0;
     z-index: -1;
+    pointer-events: none;
+    height: 0;
   }
   .bottom-nav ul {
     padding: 20px 0;
@@ -13,10 +15,15 @@
   }
   .bottom-nav.active {
     top: 24px;
+    pointer-events: all;
+    height: 256px;
   }
   .middleSection {
     border-left: none;
     border-right: none;
+  }
+  .jobSection .img1 {
+    min-height: 338px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -34,20 +41,16 @@
   .newsletter form {
     width: 100%;
   }
+  .resumeSection {
+    height: auto;
+  }
 }
 @media screen and (max-width: 576px) {
-  h1 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  p,
-  a,
-  i {
-    font-size: 12px;
-  }
   .myBtn {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .cancelBtn {
     font-size: 12px;
     padding: 10px;
   }
@@ -60,6 +63,11 @@
   }
   .newsletter form button {
     padding: 10px;
+    font-size: 12px;
+    width: 100%;
+  }
+  .form-group {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 420px) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -10,21 +10,37 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
+import Resume from "./pages/Resume";
+import Opening from "./pages/Opening";
+
+export const myContext = createContext();
 
 const App = () => {
+  const [user, setUser] = useState({
+    name: "",
+    contact: "",
+    destination: "",
+    email: "",
+    comments: "",
+    resume: "",
+  });
   return (
-    <Router>
-      <Navbar />
+    <myContext.Provider value={{ user, setUser }}>
+      <Router>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/opening" element={<Opening />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
 
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </myContext.Provider>
   );
 };
 

@@ -5,14 +5,15 @@ import three from "../assets/images/3.png";
 import four from "../assets/images/4.png";
 import twelve from "../assets/images/12.png";
 import five from "../assets/images/5.png";
+import Contact from "./Contact";
 
 const About = () => {
   return (
     <>
       <div className="container pt-5">
-        <div className="row align-items-start justify-content-md-between justify-content-center gap-lg-0 gap-5">
+        <div className="row align-items-start justify-content-md-between justify-content-center gap-lg-0 gap-5 pt-md-5">
           <div className="col-lg-7 col-md">
-            <h2 className="text-uppercase mb-4">About us</h2>
+            <h2 className="text-uppercase mb-4 borderBottom">About us</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
               atque, tenetur aspernatur aut sit neque voluptatem ea officiis
@@ -56,7 +57,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container pb-5">
+      <div className="container">
         <h2 className="text-uppercase mb-4">wakala</h2>
 
         <div className="row align-items-center justify-content-between gap-md-0 gap-2">
@@ -71,6 +72,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Contact />
     </>
   );
 };

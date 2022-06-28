@@ -7,6 +7,21 @@
   --primary: #dd137b;
   --secondary: #ebd9e3;
   --shadow: #dd137b4d;
+  --transition: all 0.5s ease-in-out;
+}
+.primaryBg {
+  background: var(--primary);
+}
+.myRadius {
+  border-radius: 3px;
+}
+.myBorder {
+  border: 1px solid var(--primary);
+}
+.borderBottom {
+  border-bottom: 1px solid var(--primary);
+  width: fit-content;
+  margin: 0 auto;
 }
 @font-face {
   font-family: "montserrat";
@@ -37,7 +52,7 @@ i {
   text-decoration: none;
 }
 .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 img {
@@ -48,7 +63,7 @@ img {
 nav {
   width: 100%;
   height: auto;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -58,7 +73,7 @@ nav {
 }
 .bottom-nav {
   background: var(--primary);
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
   z-index: 10;
 }
 .pagelinks a {
@@ -74,17 +89,26 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hamburger {
   cursor: pointer;
 }
 .myBtn {
   text-transform: uppercase;
-  border-radius: 3px;
   background: var(--primary);
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-family: "montserrat";
+  font-size: 14px;
+}
+.cancelBtn {
+  text-transform: uppercase;
+  background: #898989;
+  color: #fff;
+  padding: 5px 10px;
   border: none;
   outline: none;
   font-family: "montserrat";
@@ -125,7 +149,6 @@ nav {
 }
 .newsletter {
   background: var(--secondary);
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,7 +158,6 @@ nav {
   background: var(--primary);
   padding: 10px;
   width: 60%;
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,14 +173,66 @@ nav {
   color: #fff;
 }
 .newsletter form button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   outline: none;
-  border-radius: 3px;
   text-transform: uppercase;
+  font-family: "montserrat";
 }
 .service {
   background: linear-gradient(#0000009f, #0000009d),
     url(../images/6.png) center no-repeat;
   background-size: cover;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-group input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary);
+  flex: 1;
+  padding: 5px;
+}
+.form-group input[type="file"] {
+  border-bottom: none;
+}
+.form-group input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.form-group input[type="file"]::before {
+  content: "upload file";
+  text-transform: uppercase;
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "montserrat";
+  font-size: 14px;
+  transition: var(--transition);
+}
+.form-group input[type="file"]:hover::before {
+  background: var(--primary);
+  color: #fff;
+}
+.resumeSection {
+  height: 507px;
+}
+.resumeSection > div {
+  height: 100%;
+}
+.region {
+  background: none;
+  border: none;
+  outline: none;
 }
