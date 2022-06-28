@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/al_tahir/static/css/main.55b56bd2.css",
+    "main.js": "/al_tahir/static/js/main.6919eb56.js",
+    "static/media/1.png": "/al_tahir/static/media/1.6d0c5f0e97e9c5a0c8d6.png",
+    "static/media/8.png": "/al_tahir/static/media/8.fd0db7a4db6ee7e3933b.png",
+    "static/media/6.png": "/al_tahir/static/media/6.b87b93a0f11a77cbce24.png",
+    "static/media/5.png": "/al_tahir/static/media/5.337c6bcbddbcb98320e9.png",
+    "static/media/montserrat.ttf": "/al_tahir/static/media/montserrat.f0963fd9968fbd54cc35.ttf",
+    "static/media/11.png": "/al_tahir/static/media/11.3bb0eb8f5bed6881d215.png",
+    "static/media/3.png": "/al_tahir/static/media/3.fa0faf931406d7404c30.png",
+    "static/media/9.png": "/al_tahir/static/media/9.a143c77ce39e4ea4161b.png",
+    "static/media/7.png": "/al_tahir/static/media/7.040b1c16a2f30de2ffa1.png",
+    "static/media/2.png": "/al_tahir/static/media/2.cfb9afe97ed66f7ed3b7.png",
+    "static/media/12.png": "/al_tahir/static/media/12.a52e4b3bee00c50883cc.png",
+    "static/media/10.png": "/al_tahir/static/media/10.4278b939538354c5c1d1.png",
+    "static/media/4.png": "/al_tahir/static/media/4.918540513d0412131431.png",
+    "index.html": "/al_tahir/index.html",
+    "main.55b56bd2.css.map": "/al_tahir/static/css/main.55b56bd2.css.map",
+    "main.6919eb56.js.map": "/al_tahir/static/js/main.6919eb56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55b56bd2.css",
+    "static/js/main.6919eb56.js"
+  ]
+}
