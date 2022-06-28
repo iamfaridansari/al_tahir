@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../src/assets/css/style.css";
@@ -26,20 +26,18 @@ const App = () => {
   });
   return (
     <myContext.Provider value={{ user, setUser }}>
-      <Router>
-        <Navbar />
+      <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/opening" element={<Opening />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/opening" element={<Opening />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
 
-        <Footer />
-      </Router>
+      <Footer />
     </myContext.Provider>
   );
 };
