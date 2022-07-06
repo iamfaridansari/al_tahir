@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Resume from "./pages/Resume";
 import Opening from "./pages/Opening";
+import Feedback from "./pages/Feedback";
 
 export const myContext = createContext();
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="service" element={<Services />} />
+        <Route path="feedback" element={<Feedback />} />
         <Route path="contact" element={<Contact />} />
         <Route path="opening" element={<Opening />} />
         <Route path="resume" element={<Resume />} />

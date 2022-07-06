@@ -34,7 +34,6 @@ const Opening = () => {
           </div>
         </div>
       </div>
-      <Contact />
     </>
   );
 };

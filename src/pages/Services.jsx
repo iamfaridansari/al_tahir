@@ -20,7 +20,6 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <Contact />
     </>
   );
 };

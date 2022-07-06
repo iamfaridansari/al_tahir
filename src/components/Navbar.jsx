@@ -53,7 +53,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={navbarToggle}>
+              <Link to="/feedback" onClick={navbarToggle}>
                 feedback
               </Link>
             </li>

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import seven from "../assets/images/7.png";
-import Contact from "./Contact";
 import { myContext } from "../App";
 
 const Resume = () => {
@@ -139,7 +138,6 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <Contact />
     </>
   );
 };
